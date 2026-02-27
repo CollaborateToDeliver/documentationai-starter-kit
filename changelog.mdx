@@ -1,0 +1,107 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to the Collaborate To Deliver platform.
+---
+
+## Recent Updates
+
+<Callout kind="info">
+Subscribe to our newsletter or follow us on social media to stay informed about new releases and platform enhancements.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- **Parkbereiche Management**: Create and manage new parking areas with real-time occupancy tracking (94% belegt visualization).
+- **Vehicle Status Legend**: Added visual legend for parking spots showing `Frei`, `Einsatzbereit`, `Service fällig`, `In Wartung`, and `Defekt` statuses.
+- **Batch Actions**: Save All and Cancel All buttons for bulk updates across parking spots.
+
+## Improvements
+
+- Enhanced mobile view for `Platz 1` (Ingolstadt) and `Platz 2` (München) with numbered spot navigation (1-16).
+- Performance boost for loading available areas lists.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- **Meine Aufgaben Integration**: View and assign tasks directly from parking area dashboards.
+- **Fahrzeuge Tracking**: Link vehicles to specific parking spots with status updates.
+
+## Bug Fixes
+
+- Fixed occupancy percentage calculation for areas with variable spot counts (e.g., 16 Plätze in Ingolstadt).
+- Resolved navigation issues when switching between `Zurück zur Übersicht` and detailed views.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- **Core Parkbereiche Dashboard**: Initial release with overview of available areas, spot counts, and belegung metrics.
+- **Spot-Level Details**: Drill down into individual parking spots with status indicators.
+
+## Breaking Changes
+
+- Updated API endpoints for parking data; migrate from `/v0/parkplätze` to `/v1/parkbereiche`.
+- See migration guide below for details.
+
+</Update>
+
+## Upgrading Your Instance
+
+Follow these steps to ensure smooth updates when new versions are available.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Navigate to your dashboard settings and verify the version number displayed in the footer.
+  </Step>
+  <Step title="Review Changelog" icon="book-open">
+    Scan the relevant `<Update>` sections above for breaking changes or migration notes.
+  </Step>
+  <Step title="Backup Data" icon="database">
+    Export your park areas and vehicle data before proceeding.
+  </Step>
+  <Step title="Apply Update" icon="zap">
+    Contact support or use the auto-update feature in your admin panel.
+  </Step>
+</Steps>
+
+<Columns cols={2}>
+  <Card title="Migration Guide" icon="arrow-right" href="/configuration">
+    Detailed steps for v1.0.0 to v1.2.0 transitions.
+  </Card>
+  <Card title="Known Issues" icon="alert-triangle" href="/help-center">
+    Track open bugs and workarounds.
+  </Card>
+</Columns>
+
+## Version History
+
+| Version | Date       | Key Changes                  |
+|---------|------------|------------------------------|
+| v1.2.0  | 2024-10-15 | Parkbereiche enhancements   |
+| v1.1.0  | 2024-09-20 | Tasks and vehicles          |
+| v1.0.0  | 2024-08-10 | Initial platform release    |
+
+<Expandable title="Advanced Migration Notes" default-open="false">
+For breaking changes in v1.0.0, update your integration scripts to use the new endpoint structure:
+
+````javascript
+// Old
+fetch('https://api.example.com/v0/parkplätze')
+
+// New
+fetch('https://api.example.com/v1/parkbereiche', {
+  headers: { Authorization: `Bearer ${YOUR_TOKEN}` }
+})
+````
+</Expandable>
+
+<Callout kind="tip">
+Check the dashboard footer regularly for version notifications and enable auto-updates for seamless experiences.
+</Callout>

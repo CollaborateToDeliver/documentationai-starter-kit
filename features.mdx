@@ -1,0 +1,91 @@
+---
+title: Core Features Guide
+description: Explore the essential functionalities of the platform for handling parking occupancy, tasks, and vehicle status.
+---
+
+## Overview
+
+Manage your parking operations efficiently with Collaborate To Deliver. You handle parking areas (`Parkbereiche`), track user tasks (`Meine Aufgaben`), monitor vehicles (`Fahrzeuge`), and use visual status indicators to optimize occupancy and maintenance.
+
+<Callout kind="info">
+Review these core features and customize them to match your specific parking workflows.
+</Callout>
+
+## Key Features
+
+<Columns cols={3}>
+  <Card title="Parking Areas" icon="map-pin" href="#parking-areas">
+    View and manage occupancy across multiple sites like Ingolstadt and München.
+  </Card>
+  <Card title="User Tasks" icon="check-square" href="#user-tasks">
+    Assign, track, and complete tasks for your team.
+  </Card>
+  <Card title="Vehicle Status" icon="truck" href="#vehicle-status">
+    Monitor spots with real-time legends for free, ready, or maintenance status.
+  </Card>
+</Columns>
+
+## Managing Parking Areas
+
+Track occupancy levels in dedicated parking zones. Each area shows total spots, current occupancy percentage, and detailed spot views.
+
+| Area     | Location  | Total Spots | Occupancy |
+|----------|-----------|-------------|-----------|
+| Platz 1 | Ingolstadt| 16         | 94%      |
+| Platz 2 | München   | 9          | 67%      |
+
+<Steps>
+  <Step title="Create New Area" icon="plus">
+    Click `Neuer Parkbereich` to add a new parking zone. Enter details like location and capacity.
+  </Step>
+  <Step title="View Details" icon="eye">
+    Select an area to see individual spots numbered 1-16.
+  </Step>
+  <Step title="Update Occupancy" icon="refresh-cw">
+    Save changes with `Save All` or cancel with `Cancel All`.
+  </Step>
+</Steps>
+
+## Assigning and Tracking Tasks
+
+Keep your team aligned by managing tasks directly in the dashboard.
+
+<Tabs>
+  <Tab title="Assign Task" icon="user-plus">
+    Select a team member and assign tasks like inspections or repairs.
+  </Tab>
+  <Tab title="Track Progress" icon="activity">
+    Monitor `Meine Aufgaben` for open, in-progress, and completed items.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+Prioritize tasks based on occupancy levels to maximize spot availability.
+</Callout>
+
+## Monitoring Vehicle Statuses
+
+Use the legend to interpret spot statuses at a glance.
+
+<Expandable title="Status Legend" default-open="true">
+  - **Frei**: Available for immediate use
+  - **Einsatzbereit**: Ready for deployment
+  - **Service fällig**: Service required soon
+  - **In Wartung**: Under maintenance
+  - **Defekt**: Out of service due to defect
+</Expandable>
+
+## Best Practices
+
+- Regularly review occupancy to reassign vehicles from high-occupancy areas.
+- Use the `Zurück zur Übersicht` button to navigate between areas quickly.
+- Integrate task assignments with status updates for seamless operations.
+
+<Columns cols={2}>
+  <Card title="Next: Quickstart" icon="zap" href="/quickstart">
+    Set up your first parking area.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure access to features.
+  </Card>
+</Columns>
