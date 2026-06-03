@@ -45,6 +45,15 @@
                 "icon": "plug"
               }
             ]
+          },
+          {
+            "group": "Prozesse",
+            "pages": [
+              {
+                "title": "Wareneingang",
+                "path": "wareneingang"
+              }
+            ]
           }
         ]
       },

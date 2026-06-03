@@ -1,10 +1,11 @@
 ---
 title: Introduction to Collaborate To Deliver
-description: Discover the Collaborate To Deliver platform, a SaaS tool for managing parking areas, tasks, and vehicles efficiently.
+description: >-
+  Discover the Collaborate To Deliver platform, a SaaS tool for managing parking
+  areas, tasks, and vehicles efficiently.
 ---
-
-<Callout kind="info" title="Starter Kit Template">
-This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
+<Callout kind="info" collapsed="false">
+  This documentation was generated as a starter kit template based on your brand. Please review and customize the content to accurately reflect your product's features, APIs, and capabilities.
 </Callout>
 
 ## Overview
@@ -15,14 +16,16 @@ Collaborate To Deliver is a comprehensive SaaS platform designed for logistics a
 
 Explore the core capabilities that streamline your parking and vehicle management.
 
-<Columns cols={3}>
-  <Card title="Parking Area Management" icon="map-pin" href="#parking-management">
+<Columns cols="3">
+  <Card title="Parking Area Management" href="#parking-management" icon="map-pin" horizontal="false">
     Create and oversee parking zones like Ingolstadt or München. Track total spots, occupancy (e.g., 94% belegt), and visualize layouts.
   </Card>
-  <Card title="Vehicle Status Tracking" icon="truck" href="#vehicle-tracking">
+
+  <Card title="Vehicle Status Tracking" href="#vehicle-tracking" icon="truck" horizontal="false">
     Monitor individual spots with statuses: free, einsatzbereit, service due, in maintenance, or defective. Update via intuitive legends.
   </Card>
-  <Card title="Task Assignment" icon="check-square" href="#task-management">
+
+  <Card title="Task Assignment" href="#task-management" icon="check-square" horizontal="false">
     Manage "Meine Aufgaben" to assign maintenance, deployments, or repairs efficiently across your fleet.
   </Card>
 </Columns>
@@ -32,56 +35,64 @@ Explore the core capabilities that streamline your parking and vehicle managemen
 Get up and running in minutes.
 
 <Steps>
-  <Step title="Sign Up" icon="user-plus">
+  <Step title="Sign Up" icon="user-plus" title-type="p">
     Visit `https://roos.collaborate-to-deliver.de` and create your account. Provide your logistics company details for tailored setup.
   </Step>
-  <Step title="Add First Parking Area" icon="plus">
+
+  <Step title="Add First Parking Area" icon="plus" title-type="p">
     Navigate to "Parkbereiche" > "Neuer Parkbereich". Enter location (e.g., Ingolstadt), total spots (e.g., 16), and save.
   </Step>
-  <Step title="Monitor Vehicles" icon="eye">
+
+  <Step title="Monitor Vehicles" icon="eye" title-type="p">
     View available areas. Check occupancy and spot statuses. Use "Save All" to apply bulk changes.
   </Step>
-  <Step title="Assign Tasks" icon="list">
+
+  <Step title="Assign Tasks" icon="list" title-type="p">
     Go to "Meine Aufgaben" to create and delegate fleet-related tasks.
   </Step>
 </Steps>
 
 ## Benefits for Logistics Teams
 
-<Callout kind="tip">
-In fleet operations, real-time visibility reduces downtime by alerting you to service-fällig vehicles before they impact deliveries. Scale effortlessly from 9 spots in München to larger zones.
+<Callout kind="tip" collapsed="false">
+  In fleet operations, real-time visibility reduces downtime by alerting you to service-fällig vehicles before they impact deliveries. Scale effortlessly from 9 spots in München to larger zones.
 </Callout>
 
 <Tabs>
   <Tab title="Fleet Managers" icon="users">
     Gain oversight with occupancy dashboards and status legends to optimize parking utilization.
   </Tab>
+
   <Tab title="Operations Teams" icon="truck">
     Update spot statuses on-the-go and collaborate via shared tasks for faster resolutions.
   </Tab>
 </Tabs>
 
-| Status     | Description              | Icon Example |
-|------------|--------------------------|--------------|
-| Frei       | Available for parking    | 🟢          |
-| Einsatzbereit | Ready for deployment  | 🟡          |
-| Service fällig | Maintenance required | 🟠          |
-| In Wartung | Under maintenance        | 🔧          |
-| Defekt     | Out of service           | 🔴          |
+| Status         | Description           | Icon Example |
+| -------------- | --------------------- | ------------ |
+| Frei           | Available for parking | 🟢           |
+| Einsatzbereit  | Ready for deployment  | 🟡           |
+| Service fällig | Maintenance required  | 🟠           |
+| In Wartung     | Under maintenance     | 🔧           |
+| Defekt         | Out of service        | 🔴           |
 
 ## Next Steps
 
-<Columns cols={2}>
-  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+<Columns cols="2">
+  <Card title="Quickstart Guide" href="/quickstart" icon="zap" horizontal="false">
     Dive deeper into setup and first configurations.
   </Card>
-  <Card title="Authentication" icon="shield" href="/authentication">
+
+  <Card title="Authentication" href="/authentication" icon="shield" horizontal="false">
     Secure access for your team.
   </Card>
-  <Card title="API Reference" icon="code" href="/api">
+
+  <Card title="API Reference" href="/api" icon="code" horizontal="false">
     Integrate programmatically.
   </Card>
-  <Card title="Changelog" icon="git-branch" href="/changelog">
+
+  <Card title="Changelog" href="/changelog" icon="git-branch" horizontal="false">
     Stay updated with latest releases.
   </Card>
 </Columns>
+
