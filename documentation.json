@@ -121,6 +121,10 @@
             "icon": "history"
           }
         ]
+      },
+      {
+        "tab": "Testingv3",
+        "pages": []
       }
     ]
   }
