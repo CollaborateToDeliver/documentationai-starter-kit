@@ -1,5 +1,5 @@
 {
-  "name": "roos.collaborate-to-deliver.de",
+  "name": "rvl-os",
   "colors": {
     "light": {
       "brand": "#395723"
@@ -127,5 +127,6 @@
         "pages": []
       }
     ]
-  }
+  },
+  "title": "rvl-os"
 }
